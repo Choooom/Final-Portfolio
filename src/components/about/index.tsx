@@ -20,7 +20,6 @@ const fadeInUpVariants: Variants = {
       ease: "easeOut",
       delay: custom * 0.2,
       type: "tween",
-      useNativeDriver: true
     },
   }),
 };
@@ -33,7 +32,6 @@ const lineVariants: Variants = {
       duration: 1.5,
       ease: "easeInOut",
       type: "tween",
-      useNativeDriver: true
     },
   },
 };
@@ -94,9 +92,8 @@ const About: React.FC<AboutSectionProps> = ({
           ></motion.hr>
         </motion.div>
         <div
-          className={`flex justify-between flex-row mt-16 ${
-            isMobile && "mt-8 flex-col"
-          }`}
+          className={`flex justify-between flex-row mt-16 ${isMobile && "mt-8 flex-col"
+            }`}
         >
           <div className="flex flex-col w-1/2">
             <motion.h2
@@ -121,9 +118,8 @@ const About: React.FC<AboutSectionProps> = ({
             )}
           </div>
           <div
-            className={`flex flex-col gap-y-4 w-1/2 khula-light text-2xl ${
-              isMobile && "mt-8 text-lg w-full"
-            }`}
+            className={`flex flex-col gap-y-4 w-1/2 khula-light text-2xl ${isMobile && "mt-8 text-lg w-full"
+              }`}
           >
             <motion.p variants={fadeInUpVariants} custom={4}>
               I'm a 18 year-old web developer dedicated to turning ideas into

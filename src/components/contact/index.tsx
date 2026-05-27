@@ -19,7 +19,6 @@ const fadeInUpVariants = {
       ease: "easeOut",
       delay: custom * 0.2,
       type: "tween",
-      useNativeDriver: true
     },
   }),
 };
@@ -48,9 +47,8 @@ const Contact: React.FC<ContactSectionProps> = ({
     <motion.div
       animate={contactControls}
       initial={initialState}
-      className={`w-screen contact-bg ${
-        isMobile ? "before:bg-none after:bg-none" : "before:block after:block"
-      } min-h-screen overflow-hidden flex flex-col justify-end items-center gap-y-4 relative z-[2]`}
+      className={`w-screen contact-bg ${isMobile ? "before:bg-none after:bg-none" : "before:block after:block"
+        } min-h-screen overflow-hidden flex flex-col justify-end items-center gap-y-4 relative z-[2]`}
     >
       <motion.h2
         custom={0}

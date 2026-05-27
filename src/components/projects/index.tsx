@@ -42,7 +42,6 @@ const fadeInUpVariants: Variants = {
       ease: "easeOut",
       delay: custom * 0.2,
       type: "tween",
-      useNativeDriver: true
     },
   }),
   exit: {
@@ -52,7 +51,6 @@ const fadeInUpVariants: Variants = {
       duration: 0.4,
       ease: "easeIn",
       type: "tween",
-      useNativeDriver: true
     },
   },
 };

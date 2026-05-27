@@ -19,7 +19,6 @@ const drawVariant = {
       pathLength: { type: "spring", duration: 5, bounce: 0, delay: 0.5 },
       opacity: { duration: 0.8, ease: "easeInOut", delay: 0.5 },
       type: "tween",
-      useNativeDriver: true
     },
   },
 };
@@ -45,9 +44,8 @@ const BackgroundSVG: React.FC<BackgroundSVGProps> = ({
         <>
           <motion.path
             key="mobile-left-line"
-            d={`M ${leftX} ${height / 2} L ${leftX} 0 M ${leftX} ${
-              height / 2
-            } L ${leftX} ${height}`}
+            d={`M ${leftX} ${height / 2} L ${leftX} 0 M ${leftX} ${height / 2
+              } L ${leftX} ${height}`}
             stroke="var(--svg-line)"
             strokeWidth="2"
             fill="none"
@@ -55,9 +53,8 @@ const BackgroundSVG: React.FC<BackgroundSVGProps> = ({
           />
           <motion.path
             key="mobile-center-line"
-            d={`M ${centerX} ${height / 2} L ${centerX} 0 M ${centerX} ${
-              height / 2
-            } L ${centerX} ${height}`}
+            d={`M ${centerX} ${height / 2} L ${centerX} 0 M ${centerX} ${height / 2
+              } L ${centerX} ${height}`}
             stroke="var(--svg-line)"
             strokeWidth="2"
             fill="none"
@@ -65,9 +62,8 @@ const BackgroundSVG: React.FC<BackgroundSVGProps> = ({
           />
           <motion.path
             key="mobile-right-line"
-            d={`M ${rightX} ${height / 2} L ${rightX} 0 M ${rightX} ${
-              height / 2
-            } L ${rightX} ${height}`}
+            d={`M ${rightX} ${height / 2} L ${rightX} 0 M ${rightX} ${height / 2
+              } L ${rightX} ${height}`}
             stroke="var(--svg-line)"
             strokeWidth="2"
             fill="none"

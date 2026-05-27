@@ -91,9 +91,8 @@ function App() {
           document.documentElement.style.backgroundColor = "#ffffff";
         }
 
-        const txtColor = `rgb(${255 - Math.round(255 * progress)}, ${
-          255 - Math.round(255 * progress)
-        }, ${255 - Math.round(255 * progress)})`;
+        const txtColor = `rgb(${255 - Math.round(255 * progress)}, ${255 - Math.round(255 * progress)
+          }, ${255 - Math.round(255 * progress)})`;
         textColor.set(txtColor);
         const newOpacity = 1 - progress * 3;
         svgOpacity.set(newOpacity);
@@ -120,7 +119,6 @@ function App() {
         staggerChildren: 0.1,
         delay: 0.5,
         type: "tween",
-        useNativeDriver: true
       },
     },
   };
@@ -157,10 +155,10 @@ function App() {
                 transform: isMobile
                   ? "none"
                   : useTransform(
-                      scrollYProgress,
-                      [0, 0.5],
-                      ["translateY(0px)", "translateY(-200px)"]
-                    ),
+                    scrollYProgress,
+                    [0, 0.5],
+                    ["translateY(0px)", "translateY(-200px)"]
+                  ),
                 opacity: useTransform(scrollYProgress, [0, 0.3], [1, 0]),
                 textShadow: "0px 0px 6px rgba(255,255,255,0.25)",
               }}
@@ -188,10 +186,10 @@ function App() {
                 transform: isMobile
                   ? "none"
                   : useTransform(
-                      scrollYProgress,
-                      [0, 0.5],
-                      ["translateY(0px)", "translateY(-200px)"]
-                    ),
+                    scrollYProgress,
+                    [0, 0.5],
+                    ["translateY(0px)", "translateY(-200px)"]
+                  ),
                 opacity: useTransform(scrollYProgress, [0, 0.3], [1, 0]),
               }}
             >
