@@ -63,14 +63,14 @@ const Contact: React.FC<ContactSectionProps> = ({
         variants={fadeInUpVariants}
         className="poppins-medium text-2xl text-gray-3 px-4 text-center"
       >
-        Want to collaborate?
+        Have a Project in Mind?
       </motion.h2>
       <motion.h1
         custom={1}
         variants={fadeInUpVariants}
         className="khula-semibold text-7xl text-center px-4"
       >
-        Let's have a chat!
+        Let's connect!
       </motion.h1>
       <motion.div
         custom={2}
@@ -79,7 +79,7 @@ const Contact: React.FC<ContactSectionProps> = ({
       >
         <Magnetic>
           <a
-            href="mailto:info@bencodes.de"
+            href="mailto:romilleilaida420@gmail.com"
             className="flex gap-x-2 rounded-full border-dark border-2 px-2 py-1"
           >
             <Mail />
@@ -88,7 +88,7 @@ const Contact: React.FC<ContactSectionProps> = ({
         </Magnetic>
         <Magnetic>
           <a
-            href="https://linkedin.com/in/ben-böckmann-296293265"
+            href="https://www.linkedin.com/in/romille-ilaida-227850356"
             target="_blank"
             className="flex gap-x-2 rounded-full border-dark border-2 px-2 py-1"
           >
@@ -102,16 +102,15 @@ const Contact: React.FC<ContactSectionProps> = ({
         variants={fadeInUpVariants}
         className="flex flex-col items-center mt-[5vh]"
       >
-        <p className="poppins-regular text-2xl">bb</p>
-        <p className="poppins-extralight text-2xl">Ben Böckmann</p>
+        <p className="poppins-regular text-2xl">ri</p>
+        <p className="poppins-extralight text-2xl">Romille Ilaida</p>
 
         <p className="poppins-light px-4 text-gray-3 tracking-[calc(-1rem*0.03)] mt-[8vh] select-none mb-1 text-center">
-          © Ben Böckmann {new Date().getFullYear()}. All rights reserved.
-          Location: Germany
+          © Romille Ilaida {new Date().getFullYear()}. All rights reserved.
+          Location: Rizal, Philippines
         </p>
         <p className="poppins-light px-4 text-gray-3 select-none tracking-[calc(-1rem*0.03)] mb-8 max-w-[500px] text-center">
-          This site showcases my personal projects and professional work.
-          Content may not be used without permission.
+          This website features my personal projects and professional work. All content is protected and may not be copied, reproduced, or used without permission.
         </p>
       </motion.div>
     </motion.div>

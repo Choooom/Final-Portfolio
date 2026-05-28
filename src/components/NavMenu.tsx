@@ -113,13 +113,9 @@ const NavMenu: React.FC<NavMenuProps> = ({ isOpen, onClose }) => {
                 {[
                   {
                     name: "LinkedIn",
-                    link: "https://linkedin.com/in/ben-böckmann-296293265",
+                    link: "https://www.linkedin.com/in/romille-ilaida-227850356",
                   },
-                  {
-                    name: "Instagram",
-                    link: "https://instagram.com/ben.bck_prvt",
-                  },
-                  { name: "Github", link: "https://github.com/bencodes07" },
+                  { name: "Github", link: "https://github.com/Choooom" },
                 ].map((item, index) => (
                   <motion.li
                     key={item.name}
@@ -165,9 +161,8 @@ const NavMenu: React.FC<NavMenuProps> = ({ isOpen, onClose }) => {
                     <a
                       href={`#${item.id}`}
                       onClick={(e) => handleNavClick(e, item.id)}
-                      className={`text-[2.5rem] ${
-                        !(window.innerWidth <= 768) && "hover:left-2"
-                      } left-0 relative transition-[left] duration-300 ease-in-out`}
+                      className={`text-[2.5rem] ${!(window.innerWidth <= 768) && "hover:left-2"
+                        } left-0 relative transition-[left] duration-300 ease-in-out`}
                     >
                       {item.name}
                     </a>
@@ -185,8 +180,8 @@ const NavMenu: React.FC<NavMenuProps> = ({ isOpen, onClose }) => {
           transition={{ delay: 0.5, duration: 0.3 }}
         >
           <p className="text-sm text-gray-600">Get in touch</p>
-          <a href="mailto:info@bencodes.de" className="text-lg hover:underline">
-            info@bencodes.de
+          <a href="mailto:romilleilaida420@gmail.com" className="text-lg hover:underline">
+            romilleilaida420@gmail.com
           </a>
         </motion.div>
       </motion.div>

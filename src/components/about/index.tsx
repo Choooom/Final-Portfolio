@@ -74,8 +74,7 @@ const About: React.FC<AboutSectionProps> = ({
           custom={0}
           className={`khula-semibold ${isMobile ? "text-4xl" : "text-6xl"}`}
         >
-          I believe in a user centered design approach, ensuring that every
-          project I work on is tailored to meet the specific needs of its users.
+          I work on both frontend and backend development, including APIs, databases, and responsive user interfaces.
         </motion.h1>
 
         <motion.div
@@ -101,7 +100,7 @@ const About: React.FC<AboutSectionProps> = ({
               custom={2}
               className="khula-light text-5xl text-nowrap"
             >
-              Hi, I'm Ben.
+              Hello, I'm Romille.
             </motion.h2>
             {!isMobile && (
               <Magnetic>
@@ -122,15 +121,9 @@ const About: React.FC<AboutSectionProps> = ({
               }`}
           >
             <motion.p variants={fadeInUpVariants} custom={4}>
-              I'm a 18 year-old web developer dedicated to turning ideas into
-              creative solutions. I specialize in creating seamless and
-              intuitive user experiences.
-            </motion.p>
+              I'm a Computer Science student and full-stack web developer with experience building web and mobile applications using React, Next.js, Node.js, SQL, and Android technologies.</motion.p>
             <motion.p variants={fadeInUpVariants} custom={5}>
-              I'm involved in every step of the process: from discovery and
-              design to development, testing, and deployment. I focus on
-              delivering high-quality, scalable results that drive positive user
-              experiences.
+              I’ve worked on dashboards, tracking systems, REST APIs, and responsive interfaces through internships, academic projects, and real-world deployments. I also handle database design, testing, debugging, and deployment across the development process.
             </motion.p>
           </div>
           {isMobile && (
