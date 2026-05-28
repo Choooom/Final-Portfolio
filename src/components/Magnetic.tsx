@@ -70,5 +70,10 @@ export default function Index({ children }: { children: React.ReactElement }) {
     };
   }, [isTouchDevice]);
 
-  return React.cloneElement(children, { ref: magnetic });
+  return React.cloneElement(
+    children as React.ReactElement<any>,
+    {
+      ref: magnetic,
+    }
+  );
 }

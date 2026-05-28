@@ -1,4 +1,9 @@
-import { MotionValue, motion, useAnimationControls } from "framer-motion";
+import {
+  MotionValue,
+  motion,
+  useAnimationControls,
+  Variants,
+} from "framer-motion";
 import { Linkedin, Mail } from "lucide-react";
 import { useEffect, useState } from "react";
 import Magnetic from "../Magnetic";
@@ -9,16 +14,19 @@ type ContactSectionProps = {
   backgroundGradient: MotionValue<string>;
 };
 
-const fadeInUpVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: (custom: number) => ({
+const fadeInUpVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+
+  visible: (custom: number = 0) => ({
     opacity: 1,
     y: 0,
+
     transition: {
       duration: 0.6,
-      ease: "easeOut",
       delay: custom * 0.2,
-      type: "tween",
     },
   }),
 };
